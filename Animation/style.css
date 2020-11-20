@@ -1,0 +1,121 @@
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: localRobotoFont;
+  src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: localRobotoFontBlack;
+  src: url('fonts/Roboto-Black.ttf');
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  background: linear-gradient(to bottom, #f5f5f5, #fff);
+  height: 100%;
+  font-family: localRobotoFont, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  border-bottom-width: 2px;
+  border-bottom-color: #ccc;
+  border-bottom-style: solid;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  font-family: 'Shrikhand', cursive;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+#body {
+  padding: 55px 10px 20px;
+}
+
+#page-title {
+  margin: 0 0 25px 0;
+  padding: 0;
+  border-bottom: 1px solid #aaa;
+  font-weight: 900;
+  font-family: localRobotoFontBlack;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  transition-duration: 250ms;
+  transition-delay: 100ms;
+  transition-property: color, text-shadow;
+  transition-timing-function: ease-in-out;
+}
+
+#page-title:hover {
+  color: #8c1515;
+  text-shadow: none;
+}
+
+
+
+#footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#footer a {
+  color: #8c1515;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+@keyframes animate {
+  0% {
+    left: 10px;
+    top: 100px;
+  }
+  25% {
+    left: calc(100% - 160px);
+    top: 100px;
+  }
+  50% {
+    left: calc(100% - 160px);
+    top: calc(100% - 160px);
+  }
+  75% {
+    left: 10px;
+    top: calc(100% - 160px);
+  }
+  100% {
+    left: 10px;
+    top: 100px;
+  }
+}
+
+.animatedBox {
+  position: fixed;
+  left: 10px;
+  top: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: #8c1515;
+  animation-name: animate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
