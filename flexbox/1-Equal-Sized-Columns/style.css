@@ -23,15 +23,31 @@ body {
 }
 
 .flex-parent {
+  box-sizing: content-box;
+  padding: 15px;
+  height: 50px;
   display: flex;
   border: 1px solid red;
 }
 
 .box1, .box2, .box3 {
+  box-sizing: border-box;
+  padding: 20px;
   border: 1px solid blue;
   flex-basis: 33%;
   flex-shrink: 1;
   flex-grow: 1;
 }
 
+#footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 
+#footer a {
+  color: #8c1515;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+}
