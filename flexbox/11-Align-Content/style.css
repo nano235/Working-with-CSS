@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: localRobotoFont;
+  src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: localRobotoFontBlack;
+  src: url('fonts/Roboto-Black.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  background: linear-gradient(to bottom, #f5f5f5, #fff);
+  height: 100%;
+  font-family: localRobotoFont, Arial, sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between|space-around|flex-start|flex-end|center|stretch;
+
+  background-color: blue;
+  height: 500px;
+}
+
+.col {
+  flex-basis: 26%;
+  flex-shrink: 0;
+
+  background-color: #8c1515;
+  color: #fff;
+  border: 1px solid white;
+  height: 50px;
+}
