@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: space-between|space-around|flex-start|flex-end|center|stretch;
+  align-content: stretch;
 
   background-color: blue;
   height: 500px;

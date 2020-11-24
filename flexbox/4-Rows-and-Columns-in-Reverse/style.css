@@ -25,12 +25,15 @@ body {
 .flex-parent {
   display: flex;
   border: 1px solid red;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 
 .box1, .box2, .box3 {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 5px;
   border: 1px solid blue;
   flex-basis: 33%;
-  flex-shrink: 1;
   flex-grow: 1;
+  flex-shrink: 1;
 }

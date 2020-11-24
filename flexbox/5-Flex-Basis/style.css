@@ -24,7 +24,7 @@ body {
 
 .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   margin: 10px;
 }
 
